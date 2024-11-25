@@ -41,7 +41,8 @@ def generatePassword():
 
     # Open a random wordlist file (e.g., wordlist_1.txt, wordlist_2.txt, etc.)
     # and read its contents into wordslist
-    with open(f"./Wordlists/wordlist_{random.randint(1,20)}.txt") as words:
+    # here there is only 24 wordlist
+    with open(f"./Wordlists/wordlist_{random.randint(1,24)}.txt") as words:
         for i in words:
             # Remove any leading/trailing spaces or newline characters from each line
             wordslist.append(i.strip())
